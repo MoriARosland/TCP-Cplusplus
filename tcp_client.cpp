@@ -8,7 +8,7 @@ int main() {
   int sock = 0;
   struct sockaddr_in serv_addr;
   char buffer[1024] = {0};
-  const char *message = "Hello from client";
+  const char *message = "This message is sendt from the client😎";
 
   // Creating socket file descriptor
   if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {

@@ -53,7 +53,7 @@ int main() {
   }
 
   char buffer[1024] = {0};
-  char server_message[] = "Message from server";
+  char server_message[] = "This in an echo from the server.";
 
   recv(acc_socket, buffer, 1024, 0);
   std::cout << "Message from client: " << buffer << std::endl;
